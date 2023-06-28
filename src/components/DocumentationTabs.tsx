@@ -1,9 +1,9 @@
 'use client'
 
-// import { nodejs, python } from '@/helpers/documentation-code'
+import { nodejs, python } from '@/helpers/documentation-code'
 import { FC } from 'react'
 import SimpleBar from 'simplebar-react'
-// import Code from './ui/Code'
+import Code from './ui/Code'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/Tabs'
 
 const DocumentationTabs: FC = () => {
@@ -12,15 +12,21 @@ const DocumentationTabs: FC = () => {
       <TabsList>
         <TabsTrigger value='nodejs'>NodeJS</TabsTrigger>
         <TabsTrigger value='python'>Python</TabsTrigger>
+        <TabsTrigger value='reactjs'>Reactjs</TabsTrigger>
       </TabsList>
       <TabsContent value='nodejs'>
         <SimpleBar forceVisible='y'>
-          {/* <Code animated code={nodejs} language='javascript' show /> */}
+          <Code animated code={nodejs} language='javascript' show />
         </SimpleBar>
       </TabsContent>
       <TabsContent value='python'>
         <SimpleBar forceVisible='y'>
-          {/* <Code animated code={python} language='python' show /> */}
+          <Code animated code={python} language='python' show />
+        </SimpleBar>
+      </TabsContent>
+      <TabsContent value='reactjs'>
+        <SimpleBar forceVisible='y'>
+          <Code animated code={"reactjs"} language='javascript' show />
         </SimpleBar>
       </TabsContent>
     </Tabs>
