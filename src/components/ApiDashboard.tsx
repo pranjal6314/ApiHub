@@ -9,7 +9,7 @@ import LargeHeading from './ui/LargeHeading'
 import Paragraph from './ui/Paragraph'
 import Table from './ui/Table'
 
-const ApiDashboard = async ({}) => {
+const ApiDashboard = async ({}) => {  //api generation and revocation 
   const user = await getServerSession(authOptions)
   if (!user) return notFound()
 
