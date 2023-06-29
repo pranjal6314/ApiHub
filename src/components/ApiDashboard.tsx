@@ -17,19 +17,19 @@ const ApiDashboard = async ({}) => {
     where: { userId: user.user.id },
   })
 
-  const activeApiKey = apiKeys.find((key) => key.enabled)
+  const activeApiKey = apiKeys.find((key: { enabled: any }) => key.enabled)
 
   if (!activeApiKey) return notFound()
 
   const userRequests = await db.apiRequest.findMany({
     where: {
       apiKeyId: {
-        in: apiKeys.map((key) => key.id),
+        in: apiKeys.map((key: { id: any }) => key.id),
       },
     },
   })
 
-  const serializableRequests = userRequests.map((req) => ({
+  const serializableRequests = userRequests.map((req: { timestamp: string | number | Date }) => ({
     ...req,
     timestamp: formatDistance(new Date(req.timestamp), new Date()),
   }))

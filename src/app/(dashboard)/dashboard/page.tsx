@@ -1,5 +1,5 @@
-// import ApiDashboard from '@/components/ApiDashboard'
-// import RequestApiKey from '@/components/RequestApiKey'
+import ApiDashboard from '@/components/ApiDashboard'
+import RequestApiKey from '@/components/RequestApiKey'
 import { authOptions } from '@/lib/auth'
 import { db } from '@/lib/db'
 import { getServerSession } from 'next-auth'
@@ -21,13 +21,13 @@ const page = async () => {
   })
 
   return (
-    <div className='max-w-7xl mx-auto mt-16'>
-      {/* {apiKey ? (
+    <div className='max-w-7xl mx-auto mt-20'>
+      {apiKey ? (
         // @ts-expect-error Server Component
         <ApiDashboard />
       ) : (
         <RequestApiKey />
-      )} */}
+      )}
     </div>
   )
 }
