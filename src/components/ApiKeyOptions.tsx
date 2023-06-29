@@ -33,7 +33,7 @@ const ApiKeyOptions: FC<ApiKeyOptionsProps> = ({ apiKeyKey }) => {
       router.refresh()
     } catch (error) {
       toast({
-        title: 'Error creating new API key',
+        title: 'Error creating new API key-createNewApiKey',
         message: 'Please try again later.',
         type: 'error',
       })
@@ -45,11 +45,11 @@ const ApiKeyOptions: FC<ApiKeyOptionsProps> = ({ apiKeyKey }) => {
   const revokeCurrentApiKey = async () => {
     setIsRevoking(true)
     try {
-    //   await revokeApiKey()
+      await revokeApiKey()
       router.refresh()
     } catch (error) {
       toast({
-        title: 'Error revoking your API key',
+        title: 'Error revoking your API key-revokeCurrentApiKey',
         message: 'Please try again later.',
         type: 'error',
       })
@@ -93,7 +93,7 @@ const ApiKeyOptions: FC<ApiKeyOptionsProps> = ({ apiKeyKey }) => {
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem onClick={revokeCurrentApiKey}>
-          Revoke key
+          Delete key
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
