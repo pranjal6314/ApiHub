@@ -29,10 +29,11 @@ const ApiDashboard = async ({}) => {  //api generation and revocation
     },
   })
 
-  const serializableRequests = userRequests.map((req: { timestamp: string | number | Date }) => ({
+  const serializableRequests = userRequests.map((req) => ({ // here we just format the date to be more readable   
     ...req,
     timestamp: formatDistance(new Date(req.timestamp), new Date()),
   }))
+  
 
   return (
     <div className='container flex flex-col gap-6'>
