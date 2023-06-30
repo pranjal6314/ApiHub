@@ -43,14 +43,20 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
  
   
 
+
+  const calculateSquare = (num: number): number => {
+    const square = num * num;
+    return square;
+  };
+    const squre = calculateSquare(num);
     const generateTable = (num: number): number[] => {
-        const table: number[] = [];
-        for (let i = 1; i <= 10; i++) {
-          table.push(num * i);
-        }
-        return table;
-      };
-    const table = generateTable(num);
+      const table: number[] = [];
+      for (let i = 1; i <= 10; i++) {
+        table.push(num * i);
+      }
+      return table;
+    };
+  const table = generateTable(num);
 // console.log("similarity: ", similarity)
     const duration = new Date().getTime() - start.getTime()
     // Persist request
@@ -64,7 +70,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         usedApiKey: validApiKey.key,
       },
     })
-    return res.status(200).json({ success: true, table })
+    return res.status(200).json({ success: true, squre,table })
   } catch (error) {
     if (error instanceof z.ZodError) {
       return res.status(400).json({ error: error.issues })
