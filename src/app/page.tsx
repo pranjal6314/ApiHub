@@ -18,7 +18,7 @@ export default function Home() {
           <LargeHeading
             size='lg'
             className='three-d text-black dark:text-light-gold'>
-            Easily determine <br /> text similarity & number Operation.
+            Easily determine <br /> text similarity<br/> & number Operation.
           </LargeHeading>
 
           <Paragraph className='max-w-xl lg:text-left'>

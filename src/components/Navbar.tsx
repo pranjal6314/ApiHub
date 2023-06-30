@@ -1,4 +1,4 @@
-// import { authOptions } from '@/lib/auth'
+
 import { authOptions } from '@/lib/auth'
 import { getServerSession } from 'next-auth'
 import Link from 'next/link'
@@ -22,14 +22,19 @@ console.log('session', session)
         </div>
 
         <div className='hidden md:flex gap-4'>
-          <ThemeToggle />
+        <ThemeToggle /> 
+          <Link
+            href='/'
+            className={buttonVariants({ variant: 'subtle' })}>
+            Home
+          </Link>
           <Link
             href='/documentation'
             className={buttonVariants({ variant: 'ghost' })}>
             Documentation
           </Link>
           <Link
-            href='/https://github.com/pranjal6314/' 
+            href='https://github.com/pranjal6314/' 
             target="_blank"
             className={buttonVariants({ variant: 'ghost' })}>
         GitHub
