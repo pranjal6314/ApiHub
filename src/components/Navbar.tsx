@@ -29,9 +29,10 @@ console.log('session', session)
             Documentation
           </Link>
           <Link
-            href='/'
+            href='/https://github.com/pranjal6314/' 
+            target="_blank"
             className={buttonVariants({ variant: 'ghost' })}>
-            GitHub
+        GitHub
           </Link>
           {session ? (
             <>

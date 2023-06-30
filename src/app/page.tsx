@@ -6,8 +6,8 @@ import Paragraph from '@/components/ui/Paragraph'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Similarity API | Home',
-  description: 'Free & open-source text similarity API',
+  title: 'Your API | Home',
+  description: 'Free & open-source text & number API',
 }
 //TextSimilarityTool
 export default function Home() {
@@ -18,12 +18,12 @@ export default function Home() {
           <LargeHeading
             size='lg'
             className='three-d text-black dark:text-light-gold'>
-            Easily determine <br /> text similarity.
+            Easily determine <br /> text similarity & number Operation.
           </LargeHeading>
 
           <Paragraph className='max-w-xl lg:text-left'>
-            With the Text Similarity API, you can easily determine the
-            similarity between two pieces of text with a free{' '}
+            With the Text & Number API, you can easily determine the
+            similarity between two pieces of text and do Numeric Operations with a free{' '}
             <Link
               href='/login'
               className='underline underline-offset-2 text-black dark:text-light-gold'>
@@ -39,7 +39,8 @@ export default function Home() {
               quality={100}
               style={{ objectFit: 'contain' }}
               fill
-              src='/typewriter.png'
+              src='/p3.png'
+              // src='/typewriter.png'
               alt='typewriter'
             />
           </div>
