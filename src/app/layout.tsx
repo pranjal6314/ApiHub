@@ -3,11 +3,11 @@ import { Toaster } from '@/components/ui/Toast'
 import '@/styles/globals.css'
 import { Inter } from 'next/font/google'
 
-// import MobileMenu from '@/components/MobileMenu'
+import MobileMenu from '@/components/MobileMenu'
 import Providers from '@/components/Providers'
 import { cn } from '@/lib/utils'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] }) // 
 
 export default function RootLayout({
   children,
@@ -18,13 +18,18 @@ export default function RootLayout({
     <html
       lang='en'
       className={cn('bg-white text-slate-900 antialiased', inter.className)}>
+      <head>
+
+      <link rel="icon" href="/logo2.jpg" sizes="any" />
+      </head>
+
       <body className='min-h-screen bg-slate-50 dark:bg-slate-900 antialiased'>
         <Providers>
           {/* @ts-expect-error Server Component */}
           <Navbar />
           <Toaster position='bottom-right' />
 
-          {/* <MobileMenu /> */}
+          <MobileMenu />
 
           <main>{children}</main>
         </Providers>

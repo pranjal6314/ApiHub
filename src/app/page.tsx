@@ -6,6 +6,7 @@ import Paragraph from '@/components/ui/Paragraph'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  
   title: 'Your API | Home',
   description: 'Free & open-source text & number API',
 }
