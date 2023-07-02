@@ -8,8 +8,9 @@ import { Redis } from '@upstash/redis'
 //   url:process.env.REDIS_URL
 // })
 const redis = new Redis({
-     url: "https://possible-bluegill-40843.upstash.io",  
-      token:"AZ-LACQgOWRiOTc2OGMtNGEyNC00ODRmLWJhN2EtYzc2OWUwZDkyNjk2MWRhNWIzM2I3ZTNiNDdmYWJkNmZlMzFkYTdlNThkMDc="})
+     url: process.env.REDIS_URL,  
+      token: process.env.REDIS_SECRET, 
+    })
 const ratelimit = new Ratelimit({
   redis: redis,
   limiter: Ratelimit.slidingWindow(50, '1 h'),

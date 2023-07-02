@@ -12,6 +12,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const body = req.body as unknown
 
   const apiKey = req.headers.authorization
+  console.log("apiKey",apiKey)
 
   if (!apiKey) {
     return res.status(401).json({ error: 'Unauthorized' })
@@ -26,7 +27,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       },
     })
 
-
+console.log("validApiKey",validApiKey)
     if (!validApiKey) {
       return res.status(401).json({ error: 'Unauthorized' })
     }
@@ -35,20 +36,13 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     const start = new Date()
    
 
-
-    
-   
-
-  
- 
-  
-
-
   const calculateSquare = (num: number): number => {
     const square = num * num;
     return square;
   };
+ 
     const squre = calculateSquare(num);
+        console.log("squre: ", squre)
     const generateTable = (num: number): number[] => {
       const table: number[] = [];
       for (let i = 1; i <= 10; i++) {
@@ -57,6 +51,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       return table;
     };
   const table = generateTable(num);
+        console.log("table: ", table)
 // console.log("similarity: ", similarity)
     const duration = new Date().getTime() - start.getTime()
     // Persist request
