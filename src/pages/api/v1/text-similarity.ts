@@ -15,7 +15,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const body = req.body as unknown
 
   const apiKey = req.headers.authorization
-
+console.log("apiKey",apiKey)
   if (!apiKey) {
     return res.status(401).json({ error: 'Unauthorized' })
   }
@@ -171,7 +171,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     };
   };
     const similarity = calculateSimilarityPercentage(text1, text2);
-// console.log("similarity: ", similarity)
+console.log("similarity: ", similarity)
     const duration = new Date().getTime() - start.getTime()
     // Persist request
  const dataset=   await db.apiRequest.create({
