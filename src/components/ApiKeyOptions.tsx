@@ -28,12 +28,13 @@ const ApiKeyOptions: FC<ApiKeyOptionsProps> = ({ apiKeyKey }) => {
   const createNewApiKey = async () => {
     setIsCreatingNew(true)
     try {
-      await revokeApiKey()
-      await createApiKey()
+      await revokeApiKey() //delete
+
+      await createApiKey() //new key 
       router.refresh()
     } catch (error) {
       toast({
-        title: 'Error creating new API key-createNewApiKey',
+        title: 'Error creating new API key-createNewApiKey ',
         message: 'Please try again later.',
         type: 'error',
       })
@@ -45,7 +46,9 @@ const ApiKeyOptions: FC<ApiKeyOptionsProps> = ({ apiKeyKey }) => {
   const revokeCurrentApiKey = async () => {
     setIsRevoking(true)
     try {
+      console.log("yes revokeCurrentApiKey....")
       await revokeApiKey()
+      console.log("woow revokeing done....")
       router.refresh()
     } catch (error) {
       toast({

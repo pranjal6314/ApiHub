@@ -13,9 +13,10 @@ export const metadata: Metadata = {
 }
 
 const page = async () => {
+
   const user = await getServerSession(authOptions)
   if (!user) return notFound()
-
+console.log("user : ",user);
   const apiKey = await db.apiKey.findFirst({
     where: { userId: user.user.id, enabled: true },
   })

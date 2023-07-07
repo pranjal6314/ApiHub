@@ -19,10 +19,12 @@ const handler = async (
       return res.status(401).json({ error: 'Unauthorized', success: false })
     }
 
+    console.log("inside revoke.ts")
     const existingApiKey = await db.apiKey.findFirst({
       where: { userId: user.id, enabled: true },
     })
 
+console.log("existingApiKey", existingApiKey)
     if (!existingApiKey) {
       return res
         .status(500)
