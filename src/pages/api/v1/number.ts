@@ -4,6 +4,7 @@ import { db } from '@/lib/db'
 import { openai } from '@/lib/openai'
 import { NextApiRequest, NextApiResponse } from 'next'
 import { string, z } from 'zod'
+import fs from 'fs/promises'
 const reqSchema = z.object({
   num: z.number().max(1000),
 })
@@ -40,6 +41,7 @@ console.log("validApiKey",validApiKey)
     const square = num * num;
     return square;
   };
+ 
  
     const squre = calculateSquare(num);
         console.log("squre: ", squre)

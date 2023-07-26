@@ -1,0 +1,259 @@
+{
+    "properties": [
+        {
+            "id": "1",
+            "address": "123 Main Street",
+            "city": "New York",
+            "state": "NY",
+            "zipcode": "10001",
+            "price": 500000,
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "sqft": 1800,
+            "year_built": 2000,
+            "agent": {
+                "name": "John Smith",
+                "email": "john.smith@example.com",
+                "phone": "+1 (555) 123-4567"
+            }
+        },
+        {
+            "id": "2",
+            "address": "456 Oak Avenue",
+            "city": "Los Angeles",
+            "state": "CA",
+            "zipcode": "90001",
+            "price": 750000,
+            "bedrooms": 4,
+            "bathrooms": 3,
+            "sqft": 2400,
+            "year_built": 1995,
+            "agent": {
+                "name": "Jane Doe",
+                "email": "jane.doe@example.com",
+                "phone": "+1 (555) 987-6543"
+            }
+        },
+        {
+            "id": "3",
+            "address": "789 Elm Street",
+            "city": "Chicago",
+            "state": "IL",
+            "zipcode": "60601",
+            "price": 400000,
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "sqft": 1200,
+            "year_built": 2010,
+            "agent": {
+                "name": "Michael Johnson",
+                "email": "michael.johnson@example.com",
+                "phone": "+1 (555) 789-0123"
+            }
+        },
+        {
+            "id": "4",
+            "address": "101 Pine Road",
+            "city": "Seattle",
+            "state": "WA",
+            "zipcode": "98101",
+            "price": 600000,
+            "bedrooms": 3,
+            "bathrooms": 2.5,
+            "sqft": 2000,
+            "year_built": 1998,
+            "agent": {
+                "name": "Emily Wilson",
+                "email": "emily.wilson@example.com",
+                "phone": "+1 (555) 456-7890"
+            }
+        },
+        {
+            "id": "5",
+            "address": "222 Maple Lane",
+            "city": "Miami",
+            "state": "FL",
+            "zipcode": "33101",
+            "price": 900000,
+            "bedrooms": 5,
+            "bathrooms": 4,
+            "sqft": 3500,
+            "year_built": 2005,
+            "agent": {
+                "name": "Robert Anderson",
+                "email": "robert.anderson@example.com",
+                "phone": "+1 (555) 234-5678"
+            }
+        },
+        {
+            "id": "6",
+            "address": "777 Oak Street",
+            "city": "San Francisco",
+            "state": "CA",
+            "zipcode": "94101",
+            "price": 850000,
+            "bedrooms": 4,
+            "bathrooms": 3,
+            "sqft": 2800,
+            "year_built": 2008,
+            "agent": {
+                "name": "Jennifer Lee",
+                "email": "jennifer.lee@example.com",
+                "phone": "+1 (555) 789-4561"
+            }
+        },
+        {
+            "id": "7",
+            "address": "555 Elm Avenue",
+            "city": "Boston",
+            "state": "MA",
+            "zipcode": "02101",
+            "price": 520000,
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "sqft": 1900,
+            "year_built": 2012,
+            "agent": {
+                "name": "David Johnson",
+                "email": "david.johnson@example.com",
+                "phone": "+1 (555) 345-6789"
+            }
+        },
+        {
+            "id": "8",
+            "address": "444 Willow Lane",
+            "city": "Denver",
+            "state": "CO",
+            "zipcode": "80201",
+            "price": 480000,
+            "bedrooms": 2,
+            "bathrooms": 1.5,
+            "sqft": 1500,
+            "year_built": 2015,
+            "agent": {
+                "name": "Sarah Smith",
+                "email": "sarah.smith@example.com",
+                "phone": "+1 (555) 234-5678"
+            }
+        },
+        {
+            "id": "9",
+            "address": "999 Oak Road",
+            "city": "Austin",
+            "state": "TX",
+            "zipcode": "73301",
+            "price": 620000,
+            "bedrooms": 4,
+            "bathrooms": 3,
+            "sqft": 2600,
+            "year_built": 2011,
+            "agent": {
+                "name": "William Brown",
+                "email": "william.brown@example.com",
+                "phone": "+1 (555) 789-1234"
+            }
+        },
+        {
+            "id": "10",
+            "address": "333 Maple Street",
+            "city": "Dallas",
+            "state": "TX",
+            "zipcode": "75201",
+            "price": 580000,
+            "bedrooms": 3,
+            "bathrooms": 2.5,
+            "sqft": 2100,
+            "year_built": 2009,
+            "agent": {
+                "name": "Laura Miller",
+                "email": "laura.miller@example.com",
+                "phone": "+1 (555) 456-7890"
+            }
+        },
+        {
+            "id": "11",
+            "address": "888 Elm Road",
+            "city": "Houston",
+            "state": "TX",
+            "zipcode": "77001",
+            "price": 700000,
+            "bedrooms": 4,
+            "bathrooms": 3.5,
+            "sqft": 3000,
+            "year_built": 2016,
+            "agent": {
+                "name": "Michael Davis",
+                "email": "michael.davis@example.com",
+                "phone": "+1 (555) 567-8901"
+            }
+        },
+        {
+            "id": "12",
+            "address": "777 Maple Avenue",
+            "city": "Phoenix",
+            "state": "AZ",
+            "zipcode": "85001",
+            "price": 420000,
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "sqft": 1800,
+            "year_built": 2010,
+            "agent": {
+                "name": "Karen Wilson",
+                "email": "karen.wilson@example.com",
+                "phone": "+1 (555) 789-0123"
+            }
+        },
+        {
+            "id": "13",
+            "address": "222 Pine Street",
+            "city": "Atlanta",
+            "state": "GA",
+            "zipcode": "30301",
+            "price": 550000,
+            "bedrooms": 4,
+            "bathrooms": 3,
+            "sqft": 2400,
+            "year_built": 2013,
+            "agent": {
+                "name": "Thomas Johnson",
+                "email": "thomas.johnson@example.com",
+                "phone": "+1 (555) 567-8901"
+            }
+        },
+        {
+            "id": "14",
+            "address": "111 Oak Road",
+            "city": "San Diego",
+            "state": "CA",
+            "zipcode": "92101",
+            "price": 620000,
+            "bedrooms": 3,
+            "bathrooms": 2.5,
+            "sqft": 2200,
+            "year_built": 2007,
+            "agent": {
+                "name": "Elizabeth Smith",
+                "email": "elizabeth.smith@example.com",
+                "phone": "+1 (555) 234-5678"
+            }
+        },
+        {
+            "id": "15",
+            "address": "444 Elm Street",
+            "city": "Portland",
+            "state": "OR",
+            "zipcode": "97201",
+            "price": 560000,
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "sqft": 2000,
+            "year_built": 2006,
+            "agent": {
+                "name": "Daniel Brown",
+                "email": "daniel.brown@example.com",
+                "phone": "+1 (555) 789-1234"
+            }
+        }
+    ]
+}
