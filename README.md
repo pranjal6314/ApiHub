@@ -22,16 +22,16 @@
 <!-- BADGES -->
 <p align="center">
   <a href="https://github.com/pranjal6314/text-number-api/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/pranjal6314/text-number-api.svg?style=for-the-badge">
+    <img src="https://img.shields.io/github/contributors/pranjal6314/text-number-api.svg">
   </a>
   <a href="https://github.com/pranjal6314/text-number-api/network/members">
-    <img src="https://img.shields.io/github/forks/pranjal6314/text-number-api?style=for-the-badge">
+    <img src="https://img.shields.io/github/forks/pranjal6314/text-number-api">
   </a>  
   <a href="https://github.com/pranjal6314/text-number-api/stargazers">
-    <img src="https://img.shields.io/github/stars/pranjal6314/text-number-api?style=for-the-badge">
+    <img src="https://img.shields.io/github/stars/pranjal6314/text-number-api">
   </a>
   <a href="https://github.com/pranjal6314/text-number-api/issues">
-    <img src="https://img.shields.io/github/issues/pranjal6314/text-number-api?style=for-the-badge">
+    <img src="https://img.shields.io/github/issues/pranjal6314/text-number-api">
   </a>
 </p>
 
