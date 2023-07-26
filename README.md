@@ -35,6 +35,17 @@
   </a>
 </p>
 
+## 🛡️ Features
+
+The key features of API Hub W include:
+- Rate Limited API routes ⏳
+- Protection of sensitive routes 🔒
+- Google Authentication 🔑
+- A complete API key system to create & revoke user keys 🔑
+
+Additionally, the application boasts a visually appealing UI, thanks to the use of Radix UI Primitives,
+Tailwind CSS, fonts from next/font, and icons from Lucide. The dark mode, 
+powered by next-themes, enhances the user experience further.
 
 
 ## 💡 Inspiration
@@ -77,16 +88,6 @@ Security is a top priority for API Hub. We have implemented rate limiting on API
 
 Throughout the development of API Hub, our team gained valuable insights into building complex web applications. We deepened our understanding of Next.js, TypeScript, Prisma, and Planetscale while integrating various UI libraries and tailwindcss plugins to create an aesthetically pleasing and functional interface.
 
-## 🛡️ Features
-
-The key features of API Hub  include:
-- Rate Limited API routes
-- Protection of sensitive routes
-- Google Authentication
-- Typescript
-- A complete API key system to create & revoke user keys
-
-Additionally, the application boasts a visually appealing UI, thanks to the use of Radix UI Primitives, Tailwind CSS, fonts from next/font, and icons from Lucide. The dark mode, powered by next-themes, enhances the user experience further.
 
 ### Revenue Streams 💰
 
@@ -99,59 +100,35 @@ The project provides opportunities for potential revenue streams, such as offeri
 To get a local copy up and running follow these simple steps.
 ### Prerequisites
 In order to get a copy of the project you will require you to have Node.js (v14+) and the NPM package manager installed. If you don't have it, you can download the latest version of Node.js from the [official website](https://nodejs.org/en/download/) which also installs the NPM package manager by default.
-### Installation
-Open the terminal in the folder in which you wish to clone the repository and enter the following command:
+### 📥 Clone the repository:
+1. Open the terminal in the folder in which you wish to clone the repository and enter the following command:
 ``` 
 git clone https://github.com/pranjal6314/text-number-api.git
-cd Safe-Chain
+cd text-number-api
 ```
-Install all the NPM packages:
+2. 📦 Install dependencies:
 ```
 npm i
 ```
-In order to run :
+3. ⚙️In order to run :
 ```
 npm run dev
 ```
-
-## Contributing
-
-*Add guidelines for how developers can contribute to the project.*
-
-## Contact
-
-*Provide contact information or links to reach out to the development team or maintainers.*
+4. 🌐 Open your browser and go to `http://localhost:3000` to access LearnUP.
+## Get Involved 👥
+We welcome contributions from developers and designers Here's how you can get involved:
+1. 👩‍💻 **Developers:** If you're a developer, you can contribute to the growth and enhancement of API Hub W. Whether it's fixing bugs, adding new features, or optimizing performance, your skills are valuable to us. Check out our [Contributor's Guide](CONTRIBUTING.md) for details.
+2. 🎨 **Designers:** You can help improve the visual aspects of the website, ensuring it is intuitive and visually appealing.
 
 
 
-## Features
-
-- Rate Limited API routes
-- Protection of sensitive routes
-- Google Authentication
-- Typescript
-- A complete API key system to create & revoke user keys
-
-- Radix UI Primitives
-- Tailwind CSS
-- Fonts with next/font
-- Icons from Lucide
-- Beautiful dark mode with next-themes
-
-- Class merging with taiwind-merge
-- Animation with tailwindcss-animate
-- Conditional classes with clsx
-- Variants with class-variance-authority
 
 
+## Feedback 💬
+Your feedback is valuable to us! If you encounter any issues or have suggestions for improvement, please [submit an issue](https://github.com/pranjal6314/text-number-api/issues).
 ## Acknowledgements
 
 - [Awesome UI Components](https://ui.shadcn.com/)
-
-## Feedback
-
-If you have any feedback, please reach out to me at admin@wordful.ai
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
