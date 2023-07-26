@@ -1,6 +1,6 @@
 export const nodejs = `const axios = require("axios");
 
-const options = {
+const options1 = {
     method: 'POST',
     url: 'http://text-check-api.vercel.app/api/v1/text-similarity',
     data: {
@@ -17,6 +17,15 @@ const options2 = {
     data: {
       num:any number
     },
+    headers: {
+      'Authorization': 'YOUR_API_KEY',
+    }
+  };
+
+  const options3 = {
+    method: 'GET',
+    url: 'http://text-check-api.vercel.app/api/v1/realstate',
+   
     headers: {
       'Authorization': 'YOUR_API_KEY',
     }
