@@ -1,0 +1,69 @@
+{
+    "mess_details": {
+        "days": [
+            {
+                "day": "Monday",
+                "meals": {
+                    "breakfast": "Scrambled Eggs, Toast, Bacon, Orange Juice",
+                    "lunch": "Grilled Chicken, Brown Rice, Steamed Vegetables, Salad",
+                    "snacks": "Yogurt with Berries",
+                    "dinner": "Spaghetti with Meatballs, Garlic Bread, Caesar Salad"
+                }
+            },
+            {
+                "day": "Tuesday",
+                "meals": {
+                    "breakfast": "Pancakes with Maple Syrup, Fresh Fruits",
+                    "lunch": "Vegetable Curry with Naan Bread",
+                    "snacks": "Hummus with Carrot Sticks",
+                    "dinner": "Baked Salmon, Quinoa, Grilled Asparagus"
+                }
+            },
+            {
+                "day": "Wednesday",
+                "meals": {
+                    "breakfast": "Oatmeal with Almonds and Honey",
+                    "lunch": "Turkey and Avocado Wrap, Mixed Greens",
+                    "snacks": "Trail Mix",
+                    "dinner": "Stir-Fried Tofu with Vegetables, Steamed Rice"
+                }
+            },
+            {
+                "day": "Thursday",
+                "meals": {
+                    "breakfast": "Bagel with Cream Cheese and Smoked Salmon",
+                    "lunch": "Beef Tacos with Salsa and Guacamole",
+                    "snacks": "Cucumber Slices with Cottage Cheese",
+                    "dinner": "Chicken Alfredo Pasta, Garlic Bread, Caesar Salad"
+                }
+            },
+            {
+                "day": "Friday",
+                "meals": {
+                    "breakfast": "Fruit Smoothie Bowl with Granola",
+                    "lunch": "Mushroom Risotto",
+                    "snacks": "Apple Slices with Peanut Butter",
+                    "dinner": "BBQ Ribs, Coleslaw, Cornbread"
+                }
+            },
+            {
+                "day": "Saturday",
+                "meals": {
+                    "breakfast": "French Toast with Berries and Whipped Cream",
+                    "lunch": "Greek Salad with Grilled Chicken",
+                    "snacks": "Chips with Salsa",
+                    "dinner": "Vegetable Lasagna, Garlic Bread, Caesar Salad"
+                }
+            },
+            {
+                "day": "Sunday",
+                "meals": {
+                    "breakfast": "Waffles with Fresh Fruit Compote",
+                    "lunch": "Beef Burger with Fries",
+                    "snacks": "Cheese and Crackers",
+                    "dinner": "Roast Chicken, Mashed Potatoes, Green Beans"
+                }
+            }
+        ]
+    }
+}
