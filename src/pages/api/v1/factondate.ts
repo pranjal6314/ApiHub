@@ -5,22 +5,25 @@ import { openai } from '@/lib/openai'
 import { NextApiRequest, NextApiResponse } from 'next'
 import { string, z } from 'zod'
 import fs from 'fs/promises'
+import path from 'path';
+
 const reqSchema = z.object({
-  num: z.number().max(1000),
+  mon: z.string().max(1000),
+  date: z.string().max(1000),
 })
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const body = req.body as unknown
 
   const apiKey = req.headers.authorization
-  console.log("apiKey",apiKey)
 
   if (!apiKey) {
     return res.status(401).json({ error: 'Unauthorized' })
   }
 
   try {
-    const { num } = reqSchema.parse(body)
+    const start = new Date()
+    const { mon, date } = reqSchema.parse(body)
     const validApiKey = await db.apiKey.findFirst({
       where: {
         key: apiKey,
@@ -32,31 +35,22 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       return res.status(401).json({ error: 'Unauthorized' })
     }
 
+    const filePath = path.join(process.cwd(), 'src/data/dates.json');
 
-    const start = new Date()
-   
+    // Read the realstate.json file
+    const jsonData = await fs.readFile(filePath, 'utf-8');
+    let date_data;
+    try {
+      date_data = JSON.parse(jsonData);
+    } catch (error) {
+      return res.status(500).json({ error: 'Error parsing JSON' });
+    }
 
-  const calculateSquare = (num: number): number => {
-    const square = num * num;
-    return square;
-  };
- 
- 
-    const squre = calculateSquare(num);
-        console.log("squre: ", squre)
-    const generateTable = (num: number): number[] => {
-      const table: number[] = [];
-      for (let i = 1; i <= 10; i++) {
-        table.push(num * i);
-      }
-      return table;
-    };
-  const table = generateTable(num);
-        console.log("table: ", table)
-// console.log("similarity: ", similarity)
+    const events = date_data[mon]?.[date] || [];
+
     const duration = new Date().getTime() - start.getTime()
     // Persist request
- const dataset=   await db.apiRequest.create({
+    await db.apiRequest.create({
       data: {
         duration,
         method: req.method as string,
@@ -66,7 +60,13 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         usedApiKey: validApiKey.key,
       },
     })
-    return res.status(200).json({ success: true, squre,table })
+
+    if (events.length === 0) {
+      // If events array is empty, return a message indicating no events for the given date
+      return res.status(200).json({ success: true,mon,date, data: [], message: 'No events found for the given date' });
+    } else {
+      return res.status(200).json({ success: true, data: events,date,mon });
+    }
   } catch (error) {
     if (error instanceof z.ZodError) {
       return res.status(400).json({ error: error.issues })

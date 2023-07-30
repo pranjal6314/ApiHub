@@ -2,9 +2,26 @@ import { withMethods } from '@/lib/api-middlewares/with-methods'
 import { NextApiRequest, NextApiResponse } from 'next'
 import fs from 'fs/promises'
 import path from 'path';
+import { db } from '@/lib/db'
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+  const body = req.body as unknown
 
-const handler = async (_req: NextApiRequest, res: NextApiResponse) => {
+  const apiKey = req.headers.authorization
+  if (!apiKey) {
+    return res.status(401).json({ error: 'Unauthorized - first get API key' });
+  }
   try {
+    const validApiKey = await db.apiKey.findFirst({
+      where: {
+        key: apiKey,
+        enabled: true,
+      },
+    })
+
+    // if (!validApiKey) {
+    //   return res.status(401).json({ error: 'Unauthorized' })
+    // }
+
     // Get the absolute file path
     const filePath = path.join(process.cwd(), 'src/data/realstate.json');
 
